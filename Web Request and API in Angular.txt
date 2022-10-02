@@ -1,0 +1,40 @@
+---Make Web Request and Handle API in Angular
+-Handling API in every framework is vey important
+-Inject Web Services
+-Angular provides HTTPModule which is injected and request is made
+-The response of the Web Request in is JSON format
+-Handling theses Response and pass it on to a template for selective display
+
+--HttpModule in Angular
+-How to interact with the web services(server)
+
+---Generating Component and services for user
+
+---Adding HttpClientModule to app
+-import HttpClientModule from "@angular/common/http
+-Add this to import in NgModule
+
+---Injecting HttpClient in Angular
+-import HttpClient from "@angular/common/http
+-use HttpClient inside constructor as private so only one instance of HttpClient is available
+-HttpClient can make request and requests are of various types
+-Behind the scene
+ getUser(){
+    return this.http.get(this.url);
+  }
+-HttpClient make above return a simple observer and we can put a subscribe to that
+-The observable is created in such a way that after sometime it can unsubscribe itself
+-Here, Dependency Injection is used
+
+---Make a Web request in Angular
+-Now we need to bring services in app component, UserService and ToastrService
+-We Inject these services inside constructor as private
+-We initialize a life cycle hook OnInit and mount on it at NgOnInit
+-We use a user variable of any type
+-Inside NgOninit, we subscribe to the observable result to give up specific items from server
+
+---Accept data from parent as User
+-Passing user property from app to card component
+-To do that, we first need to pass user property from app component html to card component ts
+-From angular/core, we import Input in card component and use that @Input() user inside class to pass property
+-

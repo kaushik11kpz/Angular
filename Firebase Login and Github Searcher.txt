@@ -1,0 +1,17 @@
+--Technology Used
+-Firebase- For Authentication
+-API
+
+-Routing
+-Routing in Angular helps us navigate from one view to another as users perform tasks in web apps.
+
+-Build Project Structure(mind map)
+-Using Coggle
+
+-Learning Firebase Documentation
+
+-Project Github Searcher
+-
+
+Issues
+-Detects changes in grand child

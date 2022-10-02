@@ -1,0 +1,31 @@
+--Focus on services***
+-Services
+-Forms
+-Pipes(|)
+-Pipes converts the date from one form to other
+-It is a very powerful tool
+
+Services-
+- Any Modification in the data is done through services
+- It is where we keep all our business logic
+- Avoids manipulation of data through Component
+- Service can be injected using Injectable decorators
+- It can be injected at the root level so that all the components below this root(which is at top level) access all the things from the service class
+
+--Using of() operator of rxjs we can make anything observable
+
+--Hook into component lifecycle
+
+--Forms into Angular
+1. Reactive Form
+-Validation check and alot of things are already done by angular
+-More consumig(you have to type more)
+2. Template Driven Form
+-Manually requires todo alot of things
+-Less consuming
+-[{ngModel}] is must and it effects specific variables
+
+--Angular Wrapper Element
+-ngContent
+-mgContainer
+-Upper both elements does not bother with css unlike div tag

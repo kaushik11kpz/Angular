@@ -1,0 +1,19 @@
+->We will be learning about Templating
+->Routing
+In app.routing.module.ts we import Routes, RouterModule from "@angular/router"
+We also import NgModule in this file
+The const route declaration is very important in this file
+We create array of objects in routes
+
+-> Bootstrap
+We install bootstrap in terminal using command - npm install bootstrap
+After which bootstrap version will be seen in package.json
+In styles.css, we will import bootstrap from node modules using command- @import "~bootstrap/dist/css/bootstrap.min.css"
+~ -> gives the root directory(node modules)
+
+
+Disable type checking using $any()
+*ngIf checks for truthy and falsy values.
+
+
+

@@ -1,0 +1,6 @@
+Good naming convention is "counter-app"
+(click)  = "methodName()" 
+
+Angular Jargons used in this project
+1. Interpolation
+2. Event Binding

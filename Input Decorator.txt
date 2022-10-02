@@ -1,0 +1,2 @@
+-> Input Decorator
+For passing info from parent to child, a child must have Input decorator

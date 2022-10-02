@@ -1,0 +1,9 @@
+--Using Reactive Forms
+Step 1-
+-Import ReactiveFormsModule from "@angular/forms" in Module
+-Use bootstrap using CDN or npm install
+Step 2-
+-Logic of reactive forms in Angular
+Step 3-
+-Using Custom Validators(using class or function)
+

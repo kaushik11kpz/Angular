@@ -1,0 +1,27 @@
+->Bootstraping a file i.e making a file entry point of the progam
+ is solely very important as it is the whole architecture of angular.
+->base href is used as reference for home page.
+-> main.ts
+import means We want to use that module to perform work better and implement functionalities on our project
+bootstrapModule() asks for the first file which to load when our application start
+
+-> Create a Module in angular
+ In typical angular applicatio multiple modules are eg. for authentication, hompage, comment section
+ In these modules contains multiple components in them. eg. authentication module can have components such as - SignUp and SignIn
+
+-> Platform browser is used in Module
+-> platformbrowser dynamic is used in main.ts to bootstrap a module.
+-> We have to pass the properties to the decorators
+These properties are 
+1. imports - pass everything which comes from angular core
+2. declarations - pass everything which is imported component
+3. bootstrap - first think you want to load from this module
+4. providers
+
+Pollyfills
+
+
+In the same module components can talk to each other diectly
+Angular is SPA
+
+

@@ -1,0 +1,81 @@
+--> The problem Rxjs trying to solve
+How to handle asynchronous calls with multiple events.
+
+-->Difference between Promises and Rxjs
+->Promises
+document.addEventListener("click", 
+() => {
+  console.log("clicked");
+}
+)
+
+->Rxjs
+import {fromEvent} from "rxjs"
+fromEvent(document, 'click').subscribe(
+  () => console.log("clicked")
+)
+
+-> Rxjs provide more features than Promises
+import {fromEvent} from "rxjs"
+import {count, scan} from "rxjs/operators";
+
+fromEvent(document, 'click')
+.pipe(scan(count => count + 1 , 0))
+.subscribe(
+  (count) => console.log(`Clicked at :  ${count} `)
+)
+
+-> Pipe is used to perform various operations inside pipe than flush out from inside like usual pipe.
+-> Scan is a rxjs operator
+
+--> Observable
+Analogy -> Youtube channel with subscriber and bell icon
+-> How to create Observable
+import { Observable } from "rxjs"
+
+const observable = new Observable(subscriber => {
+ subscriber.next(1);
+ subscriber.next(2);
+ subscriber.next(3);
+ setTimeout( () => {
+  subscriber.next(4);
+  subscriber.complete();
+ },2000)
+})
+
+-->Observer observes Observable
+Create an Observer from Observable
+import { Observable } from "rxjs"
+
+const observable = new Observable(susbscriber => {
+ susbscriber.next(1);
+ susbscriber.next(2);
+ susbscriber.next(3);
+
+
+ setTimeout( () => {
+  susbscriber.next(4);
+  susbscriber.complete();
+ },2000)
+})
+
+console.log("I AM ABOUT TO SUBSCRIBE")
+
+observable.subscribe({
+  next(x){ console.log(" We got : " + x);},
+  error(err) {console.log( " We got : " + err);},
+  complete() { console.log("COMPLETED")}
+})
+
+console.log("All Done");
+
+--> To Unsubscribe
+subs.unsubscribe()
+
+-> Create Observable from "from" and unsubscribe
+import { from } from "rxjs"
+const observable = from([10,20,30,40,50]);
+const subscription = observable.subscribe( x=> console.log(x))
+subscription.unsubscribe();
+
+--> Pipes and Operatorson Rxjs

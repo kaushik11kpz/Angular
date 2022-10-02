@@ -1,0 +1,21 @@
+node -v - To check node.js version
+npm -v - To check npm version
+ng v - To check angular version.
+ng new <name> - creates new Angular app.
+ng generate <schematic> - generates various jargons.
+
+Typescript is used in Angular
+All the typescript is transcompiled into javascript.
+
+never provide node-modules with spurce codes in git or anywhere as
+it can be installed using command 'npm install'.
+
+app is a module.
+
+Typescript
+1. for of loop -> gives values of array.
+2. for in loop -> gives indexes of array
+
+Decorators(@)
+
+
